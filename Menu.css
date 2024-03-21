@@ -1,0 +1,61 @@
+header h1{
+        background-color: red;
+        margin: 0%;
+        padding: 20px;
+        text-align: center;
+        font-weight: bold;
+}
+
+#navigate{
+        position: sticky;
+        z-index: 1;
+        top: 0%;
+}
+
+.menus{
+        margin: 0%;
+        background-color: darkgray;
+}
+
+.menus li{
+        display: inline-block;
+        padding: 10px;
+}
+
+.menus li a{
+        color: white;
+        font: 25px;
+        text-decoration: none;
+}
+
+.menus li:hover{
+        background-color: black;
+}
+
+#dropdown1,#dropdown2{
+        position: absolute;
+        width: auto;
+        max-width: 150px;
+        display: none;
+        top: 40px;
+        background-color: whitesmoke;
+        padding: 0%;
+}
+
+#dropdown1 li ,#dropdown2 li{
+        display: block;
+}
+
+#dropdown1 li:hover ,#dropdown2 li:hover{
+        background-color: lightgray;
+}
+
+#dropdown1 li a ,#dropdown2 li a{
+        color: steelblue;
+        font-size: 15px;
+}
+
+.menus li:nth-child(2):hover #dropdown1, .menus li:nth-child(3):hover #dropdown2{
+            display: block;
+}
+ 
